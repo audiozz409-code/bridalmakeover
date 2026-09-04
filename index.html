@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jyoti Sachdeva | Luxury Bridal Makeup Artist Haryana & Ambala</title>
-   
+  
   <script src="https://cdn.tailwindcss.com"></script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -214,4 +214,363 @@
 
     header.sticky{background:rgba(255,249,247,.84)!important;box-shadow:0 10px 35px rgba(88,34,48,.08);border-bottom-color:rgba(187,28,67,.15)!important}
     header.sticky nav a{position:relative}
-    header.sticky nav a:after{content:"";position:absolute;left
+    header.sticky nav a:after{content:"";position:absolute;left:50%;bottom:-8px;width:0;height:2px;background:linear-gradient(90deg,var(--rb),var(--gold));transition:.3s;transform:translateX(-50%)}
+    header.sticky nav a:hover:after{width:100%}
+
+    section.relative.min-h-\[90vh\]{isolation:isolate;background:radial-gradient(circle at 78% 25%,rgba(187,28,67,.12),transparent 27%),radial-gradient(circle at 15% 75%,rgba(197,155,39,.10),transparent 24%),linear-gradient(135deg,#fff8f6 0%,#f8e6eb 48%,#fffdfb 100%)!important}
+    section.relative.min-h-\[90vh\]:before{content:"";position:absolute;width:420px;height:420px;right:-130px;top:-110px;border:1px solid rgba(187,28,67,.16);border-radius:50%;box-shadow:0 0 0 28px rgba(187,28,67,.025),0 0 0 56px rgba(197,155,39,.025);animation:floatRing 9s ease-in-out infinite;pointer-events:none}
+    section.relative.min-h-\[90vh\]:after{content:"✦ BRIDAL EDIT ✦";position:absolute;right:5%;bottom:9%;font-size:10px;letter-spacing:.32em;color:var(--rb);opacity:.6;transform:rotate(-90deg);transform-origin:right center;pointer-events:none}
+    @keyframes floatRing{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(16px) rotate(8deg)}}
+    .hero-frame{filter:drop-shadow(0 28px 50px rgba(93,22,43,.16))}
+    .hero-frame:before{border-color:rgba(187,28,67,.35)!important;box-shadow:inset 0 0 0 1px rgba(197,155,39,.08)}
+
+    a[href="#book"],a[href*="wa.me"]{box-shadow:0 10px 24px rgba(143,18,51,.16);position:relative;overflow:hidden}
+    a[href="#book"]:before,a[href*="wa.me"]:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 25%,rgba(255,255,255,.28) 50%,transparent 75%);transform:translateX(-120%);transition:.65s}
+    a[href="#book"]:hover:before,a[href*="wa.me"]:hover:before{transform:translateX(120%)}
+
+    .service-card-luxury,.lookbook-card,.service-card{position:relative}
+    .service-card-luxury:before,.lookbook-card:before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:linear-gradient(135deg,rgba(187,28,67,.28),transparent 35%,rgba(197,155,39,.35));-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.7}
+    .service-card-luxury:hover{transform:translateY(-12px) rotate(.15deg);box-shadow:0 30px 65px rgba(91,25,43,.17)!important}
+    .service-image-luxury:after{background:linear-gradient(to top,rgba(73,10,28,.28),transparent 55%)!important}
+
+    section.bg-black{background:radial-gradient(circle at 12% 10%,rgba(187,28,67,.34),transparent 28%),radial-gradient(circle at 90% 85%,rgba(197,155,39,.16),transparent 26%),linear-gradient(135deg,#241119,#3a1722 52%,#1c0d13)!important;position:relative;overflow:hidden}
+    section.bg-black:before{content:"";position:absolute;inset:20px;border:1px solid rgba(197,155,39,.16);border-radius:32px;pointer-events:none}
+    section.bg-black:after{content:"JYOTI SACHDEVA • BRIDAL COUTURE";position:absolute;right:30px;top:34px;font-size:9px;letter-spacing:.3em;color:rgba(255,255,255,.35);writing-mode:vertical-rl;pointer-events:none}
+
+    .section-kicker{letter-spacing:.25em!important;color:var(--rb)!important}
+    h1,h2{letter-spacing:-.02em}
+    h1 strong,h2 strong,.raspberry-text{color:var(--rb)!important}
+
+    #signature{background:linear-gradient(135deg,#fff9f7 0%,#f8e7eb 55%,#fff 100%)!important;position:relative}
+    #signature:before{content:"";position:absolute;left:-90px;top:40px;width:220px;height:220px;border-radius:50%;border:1px solid rgba(187,28,67,.12);box-shadow:0 0 0 20px rgba(197,155,39,.035),0 0 0 40px rgba(187,28,67,.025);pointer-events:none}
+
+    #about{background:linear-gradient(180deg,#fff,#fff8f6)!important}
+    #contact{background:linear-gradient(135deg,#fff8f6,#f5e0e6 60%,#fff)!important}
+    #book{background:radial-gradient(circle at 10% 20%,rgba(187,28,67,.08),transparent 25%),linear-gradient(135deg,#fff,#fff7f5)!important}
+    footer{background:linear-gradient(135deg,#241119,#351421)!important;color:#f8e8ed!important;border-top-color:rgba(197,155,39,.25)!important}
+
+    .creative-reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+    .creative-reveal.is-visible{opacity:1;transform:none}
+
+    .creative-badge{position:absolute;z-index:10;left:5%;bottom:12%;padding:10px 16px;border:1px solid rgba(187,28,67,.22);border-radius:999px;background:rgba(255,255,255,.72);backdrop-filter:blur(10px);font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--wine);box-shadow:0 12px 30px rgba(80,20,35,.08)}
+    .creative-badge span{color:var(--gold);margin-right:7px}
+    @media(max-width:768px){section.relative.min-h-\[90vh\]:after{display:none}.creative-badge{left:6%;bottom:5%;font-size:8px}.creative-badge{display:none}section.bg-black:after{display:none}section.bg-black:before{inset:10px;border-radius:20px}}
+  </style>
+
+  <style id="premium-final-polish">
+    :root{
+      --lux-wine:#74132d;
+      --lux-berry:#a81742;
+      --lux-rose:#d94b72;
+      --lux-gold:#b88a2c;
+      --lux-champagne:#f8eee8;
+      --lux-ink:#24171c;
+    }
+    body{
+      font-feature-settings:"kern","liga";
+      text-rendering:optimizeLegibility;
+    }
+    ::selection{background:var(--lux-berry);color:#fff}
+
+    body>div:first-of-type{
+      min-height:34px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:10px!important;
+      letter-spacing:.22em!important;
+    }
+
+    header.sticky{
+      transition:background .35s ease,box-shadow .35s ease,transform .35s ease;
+    }
+    header.sticky > div{height:76px}
+    header.sticky a[href="#"]{line-height:1.05}
+    header.sticky nav a{
+      font-size:11px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    header.sticky a[href="#book"]{
+      padding:12px 19px;
+      letter-spacing:.16em;
+    }
+
+    section.relative.min-h-\[90vh\]{
+      min-height:calc(100vh - 110px);
+    }
+    section.relative.min-h-\[90vh\] h1{
+      max-width:780px;
+      font-size:clamp(3.2rem,6.3vw,6.6rem);
+      line-height:.96;
+    }
+    section.relative.min-h-\[90vh\] p{
+      font-size:15px;
+      max-width:590px;
+    }
+    section.relative.min-h-\[90vh\] .inline-flex.items-center.gap-2{
+      box-shadow:0 8px 30px rgba(116,19,45,.07);
+      backdrop-filter:blur(12px);
+    }
+    .hero-frame{
+      transform:translateZ(0);
+    }
+    .hero-frame img{
+      object-position:center;
+    }
+
+    a[href="#book"],
+    a[href*="wa.me"]{
+      letter-spacing:.04em;
+    }
+    a[href="#book"]:hover{
+      transform:translateY(-2px);
+      box-shadow:0 16px 34px rgba(116,19,45,.20);
+    }
+    a[href*="wa.me"]:hover{
+      transform:translateY(-2px);
+      box-shadow:0 14px 30px rgba(36,23,28,.10);
+    }
+
+    section h2{
+      text-wrap:balance;
+    }
+    .section-kicker,
+    section [class*="tracking-widest"]{
+      letter-spacing:.24em!important;
+    }
+
+    .service-card-luxury,
+    .lookbook-card,
+    .service-card,
+    #signature .grid > div,
+    #contact .grid > div{
+      backdrop-filter:blur(8px);
+    }
+    #signature .grid > div,
+    #contact .grid > div{
+      transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease;
+    }
+    #signature .grid > div:hover,
+    #contact .grid > div:hover{
+      transform:translateY(-7px);
+      border-color:rgba(184,138,44,.45);
+      box-shadow:0 22px 48px rgba(78,27,42,.10);
+    }
+
+    #about img{
+      transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .8s ease;
+    }
+    #about .rounded-3xl:hover img{
+      transform:scale(1.035);
+      filter:saturate(1.04) contrast(1.03);
+    }
+
+    #book > div > div{
+      position:relative;
+      overflow:hidden;
+      box-shadow:0 28px 70px rgba(76,28,43,.11);
+    }
+    #book > div > div:before{
+      content:"";
+      position:absolute;
+      inset:14px;
+      border:1px solid rgba(184,138,44,.22);
+      border-radius:22px;
+      pointer-events:none;
+    }
+    #book input,#book select{
+      transition:border-color .25s ease,box-shadow .25s ease,transform .25s ease;
+    }
+    #book input:focus,#book select:focus{
+      box-shadow:0 0 0 4px rgba(168,23,66,.07);
+      transform:translateY(-1px);
+    }
+
+    footer{
+      position:relative;
+    }
+    footer:before{
+      content:"";
+      position:absolute;
+      top:0;
+      left:50%;
+      width:110px;
+      height:1px;
+      transform:translateX(-50%);
+      background:linear-gradient(90deg,transparent,var(--lux-gold),transparent);
+    }
+
+    .creative-reveal{
+      will-change:transform,opacity;
+    }
+    @media (prefers-reduced-motion:reduce){
+      *,*::before,*::after{
+        animation-duration:.01ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.01ms!important;
+        scroll-behavior:auto!important;
+      }
+      .creative-reveal{opacity:1!important;transform:none!important}
+    }
+
+    @media(max-width:768px){
+      header.sticky > div{height:68px}
+      section.relative.min-h-\[90vh\]{
+        min-height:auto;
+        padding-top:4rem;
+        padding-bottom:5rem;
+      }
+      section.relative.min-h-\[90vh\] h1{
+        font-size:clamp(2.8rem,13vw,4.5rem);
+      }
+      section.relative.min-h-\[90vh\] .flex.flex-col.sm\:flex-row{
+        gap:10px;
+      }
+      section.relative.min-h-\[90vh\] a[href="#book"],
+      section.relative.min-h-\[90vh\] a[href*="wa.me"]{
+        width:100%;
+        padding:15px 18px;
+      }
+      #book > div > div:before{inset:9px;border-radius:18px}
+    }
+  </style>
+</head>
+<body class="bg-brand-cream text-brand-deepcharcoal font-sans selection:bg-brand-gold selection:text-white pb-20 sm:pb-0">
+
+  <div class="bg-brand-raspberry text-white text-xs py-2.5 px-4 text-center tracking-widest uppercase font-medium">
+    ✦ Wedding Season Booking Open for 2026–2027 | Limited Dates Available Across Haryana & Delhi-NCR ✦
+  </div>
+
+  <header class="sticky top-0 w-full z-50 bg-brand-cream/90 backdrop-blur-md border-b border-brand-roseborder">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-brand-deepcharcoal">
+        JYOTI SACHDEVA
+        <span class="block text-[10px] tracking-[0.25em] font-sans font-semibold text-brand-darkgold uppercase">Luxury Bridal Makeup Artist</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-brand-muted">
+        <a href="#about" class="hover:text-brand-darkgold transition">About Jyoti</a>
+        <a href="#signature" class="hover:text-brand-darkgold transition">Signature Looks</a>
+        <a href="#gallery" class="hover:text-brand-darkgold transition">Bridal Gallery</a>
+        <a href="#contact" class="hover:text-brand-darkgold transition">Ambala Studio</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a href="tel:+919815280876" class="hidden lg:inline-flex items-center gap-1.5 text-xs font-bold tracking-wider text-brand-deepcharcoal hover:text-brand-darkgold transition">
+          <span>📞</span> +91 98152 80876
+        </a>
+        <a href="#book" class="inline-flex items-center px-6 py-2.5 rounded-full text-xs uppercase tracking-widest font-bold bg-brand-raspberry text-white hover:bg-brand-wine transition duration-300 shadow-sm">
+          Book Bridal Date
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="h-0.5 raspberry-gradient"></div>
+
+  <section class="relative min-h-[90vh] flex items-center py-16 bg-gradient-to-br from-brand-blush/70 via-brand-cream to-white overflow-hidden">
+    <div class="bridal-glow -top-20 -left-24"></div>
+    <div class="bridal-glow bottom-0 right-0"></div>
+    <div class="ornament -left-8 top-28"></div>
+
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
+
+      <div class="lg:col-span-7">
+        <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full border border-brand-gold/50 text-brand-darkgold text-xs font-bold uppercase tracking-widest mb-6 bg-white/90 shadow-sm">
+          ✦ Haryana's Most Coveted Bridal Specialist ✦
+        </span>
+
+        <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.08] text-brand-deepcharcoal mb-6">
+          Every Bride Deserves To Feel Like Royalty.
+        </h1>
+
+        <div class="gold-line mb-6"></div>
+
+        <p class="text-base sm:text-lg text-brand-muted mb-8 leading-relaxed max-w-xl">
+          Crafting breathtaking, long-lasting bridal beauty for over 10+ years.
+          From authentic traditional red lehenga looks to soft pastel morning
+          pheras—designed to look divine in person and flawless on camera.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#book" class="inline-flex justify-center items-center px-8 py-4 rounded-full font-semibold text-white bg-brand-raspberry hover:bg-brand-wine transition duration-300 text-center shadow-lg">
+            Check Wedding Date Availability
+          </a>
+          <a href="https://wa.me/919815280876?text=Hi%20Jyoti,%20I%20want%20to%20inquire%20about%20Bridal%20Makeup%20for%20my%20wedding." target="_blank" rel="noopener" class="inline-flex justify-center items-center px-8 py-4 rounded-full font-semibold text-brand-deepcharcoal bg-white border border-brand-roseborder hover:border-brand-gold transition duration-300 text-center shadow-sm">
+            <span class="mr-2">◉</span> WhatsApp Jyoti Directly
+          </a>
+        </div>
+
+        <div class="mt-10 flex flex-wrap items-center gap-5 sm:gap-6 pt-6 border-t border-brand-roseborder/60">
+          <div>
+            <p class="font-serif text-2xl font-bold text-brand-darkgold">1,200+</p>
+            <p class="text-xs uppercase tracking-wider text-brand-muted">Real Brides Styled</p>
+          </div>
+          <div class="hidden sm:block h-8 w-px bg-brand-roseborder"></div>
+          <div>
+            <p class="font-serif text-2xl font-bold text-brand-darkgold">10+ Years</p>
+            <p class="text-xs uppercase tracking-wider text-brand-muted">Celebrity Experience</p>
+          </div>
+          <div class="hidden sm:block h-8 w-px bg-brand-roseborder"></div>
+          <div>
+            <p class="font-serif text-2xl font-bold text-brand-darkgold">100% HD</p>
+            <p class="text-xs uppercase tracking-wider text-brand-muted">Non-Cakey Glow</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 relative">
+        <div class="absolute -inset-5 rounded-[180px] border border-brand-gold/40 pointer-events-none"></div>
+        <div class="relative mx-auto max-w-md overflow-hidden rounded-t-[150px] rounded-b-[2rem] border-4 border-white shadow-2xl bg-brand-blush">
+          <img
+            src="images/hero.jpg"
+            alt="Jyoti Sachdeva Bridal Makeup"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur-md border-t border-brand-roseborder p-3 sm:hidden flex items-center justify-between gap-2 shadow-2xl">
+    <a href="tel:+919815280876" class="flex-1 text-center py-3 bg-brand-deepcharcoal text-white rounded-xl text-xs font-bold uppercase tracking-wider">
+      📞 Call Us
+    </a>
+    <a href="https://wa.me/919815280876?text=Hi%20Jyoti,%20I%20want%20to%20check%20bridal%20date%20availability." target="_blank" class="flex-1 text-center py-3 bg-green-600 text-white rounded-xl text-xs font-bold uppercase tracking-wider">
+      💬 WhatsApp
+    </a>
+  </div>
+
+  <script id="creative-reveal-script">
+    (function(){
+      const items=document.querySelectorAll('.creative-reveal');
+      if(!('IntersectionObserver' in window)){items.forEach(x=>x.classList.add('is-visible'));return;}
+      const io=new IntersectionObserver((entries)=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target)}}),{threshold:.08});
+      items.forEach(x=>io.observe(x));
+    })();
+  </script>
+
+  <script id="booking-whatsapp-handler">
+    (function(){
+      const form=document.querySelector('#book form');
+      if(!form) return;
+      form.addEventListener('submit',function(e){
+        e.preventDefault();
+        const fields=form.querySelectorAll('input,select');
+        const name=fields[0]?.value.trim()||'';
+        const phone=fields[1]?.value.trim()||'';
+        const date=fields[2]?.value||'';
+        const city=fields[3]?.value.trim()||'';
+        const pkg=fields[4]?.value||'';
+        const msg =
+          "Hi Jyoti, I want to check bridal date availability.%0A%0A"+
+          "Bride Name: "+encodeURIComponent(name)+"%0A"+
+          "WhatsApp: "+encodeURIComponent(phone)+"%0A"+
+          "Wedding Date: "+encodeURIComponent(date)+"%0A"+
+          "City: "+encodeURIComponent(city)+"%0A"+
+          "Package: "+encodeURIComponent(pkg);
+        window.open("https://wa.me/919815280876?text="+msg, '_blank');
+      });
+    })();
+  </script>
+</body>
+</html>
