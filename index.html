@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jyoti Sachdeva | Celebrity Makeup Artist Ambala</title>
+  <meta name="description" content="Premium bridal, HD, airbrush, and party makeup artistry by Jyoti Sachdeva at Sector 9, Ambala." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #fdfbf9;
+      --card-bg: #ffffff;
+      --accent: #c48b71;
+      --accent-hover: #b0765c;
+      --accent-soft: #fbf3ef;
+      --text: #2d2624;
+      --muted: #6e6763;
+      --border: #ede4de;
+      --shadow: 0 4px 20px rgba(196, 139, 113, 0.08);
+    }
+
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+    }
+
+    body { 
+      background-color: var(--bg); 
+      color: var(--text); 
+      line-height: 1.65; 
+      padding: 0 1.25rem; 
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 300;
+    }
+
+    .container { 
+      max-width: 860px; 
+      margin: 0 auto; 
+      padding: 3.5rem 0; 
+    }
+
+    header { 
+      text-align: center; 
+      margin-bottom: 3.5rem; 
+    }
+
+    .badge { 
+      display: inline-block; 
+      background: var(--accent-soft); 
+      border: 1px solid var(--border); 
+      color: var(--accent); 
+      font-size: 0.72rem; 
+      font-weight: 600;
+      text-transform: uppercase; 
+      letter-spacing: 2px; 
+      padding: 0.35rem 1rem; 
+      border-radius: 999px; 
+      margin-bottom: 1.25rem; 
+    }
+
+    h1, h2, h3 { 
+      font-family: 'Playfair Display', Georgia, serif; 
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    h1 { 
+      font-size: 2.75rem; 
+      letter-spacing: -0.5px; 
+      margin-bottom: 0.85rem; 
+    }
+
+    header p { 
+      color: var(--muted); 
+      font-size: 1.15rem; 
+      max-width: 620px; 
+      margin: 0 auto; 
+      font-weight: 400;
+    }
+
+    .btn-group { 
+      display: flex; 
+      gap: 1rem; 
+      justify-content: center; 
+      margin-top: 2rem; 
+      flex-wrap: wrap; 
+    }
+
+    .btn-primary { 
+      background: var(--accent); 
+      color: #ffffff; 
+      padding: 0.85rem 1.85rem; 
+      border-radius: 30px; 
+      text-decoration: none; 
+      font-weight: 600; 
+      font-size: 0.95rem;
+      box-shadow: 0 4px 12px rgba(196, 139, 113, 0.25);
+      transition: all 0.2s ease; 
+    }
+
+    .btn-primary:hover { 
+      background: var(--accent-hover); 
+      transform: translateY(-1px);
+    }
+
+    .btn-outline { 
+      border: 1px solid var(--border); 
+      background: var(--card-bg);
+      color: var(--text); 
+      padding: 0.85rem 1.85rem; 
+      border-radius: 30px; 
+      text-decoration: none; 
+      font-weight: 500; 
+      font-size: 0.95rem;
+      transition: border-color 0.2s;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+    }
+
+    .stats { 
+      display: flex; 
+      justify-content: space-around; 
+      background: var(--card-bg);
+      border: 1px solid var(--border); 
+      border-radius: 12px;
+      padding: 2rem 1rem; 
+      margin: 3rem 0; 
+      text-align: center; 
+      box-shadow: var(--shadow);
+    }
+
+    .stat-val { 
+      font-family: 'Playfair Display', serif;
+      font-size: 2.25rem; 
+      font-weight: 700; 
+      color: var(--accent); 
+    }
+
+    .stat-lbl { 
+      color: var(--muted); 
+      font-size: 0.8rem; 
+      text-transform: uppercase; 
+      letter-spacing: 1.5px; 
+      margin-top: 0.25rem;
+      font-weight: 500;
+    }
+
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+      gap: 1.5rem; 
+      margin: 3rem 0; 
+    }
+
+    .card { 
+      background: var(--card-bg); 
+      border: 1px solid var(--border); 
+      border-radius: 12px; 
+      padding: 1.75rem; 
+      box-shadow: var(--shadow);
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .card h3 { 
+      font-size: 1.25rem; 
+      margin-bottom: 0.6rem; 
+      color: var(--text);
+    }
+
+    .card p { 
+      color: var(--muted); 
+      font-size: 0.92rem; 
+      line-height: 1.6;
+    }
+
+    .contact-section { 
+      background: var(--card-bg); 
+      border: 1px solid var(--border); 
+      border-radius: 16px; 
+      padding: 2.5rem 1.5rem; 
+      text-align: center; 
+      box-shadow: var(--shadow);
+    }
+
+    .contact-section h2 {
+      font-size: 2rem;
+    }
+
+    .contact-details { 
+      margin: 1.75rem auto; 
+      font-size: 1rem; 
+      color: var(--muted);
+      max-width: 580px;
+    }
+
+    .contact-details p {
+      margin: 0.6rem 0;
+      line-height: 1.5;
+    }
+
+    .contact-details strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .contact-details a { 
+      color: var(--accent); 
+      text-decoration: none; 
+      font-weight: 600;
+    }
+
+    footer { 
+      text-align: center; 
+      color: var(--muted); 
+      font-size: 0.8rem; 
+      margin-top: 3.5rem; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">10+ Years Artistry</div>
+      <h1>Jyoti Sachdeva</h1>
+      <p>Luxury bridal transformations, radiant HD beauty, and editorial glam tailored across Haryana, Punjab & North India.</p>
+      <div class="btn-group">
+        <a href="https://wa.me/919815280876?text=Hi%20Jyoti,%20I'd%20like%20to%20inquire%20about%20bridal%20makeup%20packages" class="btn-primary">Book on WhatsApp</a>
+        <a href="tel:+919815280876" class="btn-outline">Call +91 98152 80876</a>
+      </div>
+    </header>
+
+    <div class="stats">
+      <div>
+        <div class="stat-val">10+</div>
+        <div class="stat-lbl">Years Experience</div>
+      </div>
+      <div>
+        <div class="stat-val">1000+</div>
+        <div class="stat-lbl">Brides Styled</div>
+      </div>
+      <div>
+        <div class="stat-val">100%</div>
+        <div class="stat-lbl">Luxury Kits</div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Bridal HD & Airbrush</h3>
+        <p>Luminous, transfer-resistant base created for high-definition photography and long wedding rituals.</p>
+      </div>
+      <div class="card">
+        <h3>Engagement & Reception</h3>
+        <p>Refined glamour matched precisely to your couture, venue lighting, and natural contours.</p>
+      </div>
+      <div class="card">
+        <h3>Haldi, Mehndi & Sangeet</h3>
+        <p>Effortless, dewy, skin-first looks paired with modern floral and contemporary hair styling.</p>
+      </div>
+      <div class="card">
+        <h3>Editorial & Party Looks</h3>
+        <p>High-fashion aesthetic crafted for cocktails, special occasions, and red-carpet events.</p>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <h2>Reserve Your Date</h2>
+      <p style="color: var(--muted); margin-top: 0.35rem;">Bridal dates get booked quickly. Connect directly to check package details and availability.</p>
+      
+      <div class="contact-details">
+        <p><strong>Studio Address:</strong> Sco 6, Second Floor, above More Departmental Store, Sector 9, Ambala, Haryana 134003</p>
+        <p><strong>Phone:</strong> <a href="tel:+919815280876">+91 98152 80876</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@jyotisachdeva.com">info@jyotisachdeva.com</a></p>
+        <p><strong>Official Website:</strong> <a href="https://jyotisachdeva.com/" target="_blank">jyotisachdeva.com</a></p>
+      </div>
+
+      <a href="https://wa.me/919815280876?text=Hi%20Jyoti,%20I'd%20like%20to%20know%20availability%20for%20my%20wedding%20date" class="btn-primary">Instant Booking Enquiry</a>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 <a href="https://jyotisachdeva.com/" style="color: inherit; text-decoration: none;">Jyoti Sachdeva Makeup Artistry</a>. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
