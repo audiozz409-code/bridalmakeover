@@ -386,6 +386,58 @@
     }
 
   </style>
+
+<style>
+.grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 1.8rem !important;
+  margin: 3rem 0 !important;
+}
+
+.grid .card {
+  padding: 0 !important;
+  overflow: hidden;
+  border-radius: 22px !important;
+  background: linear-gradient(145deg,#fff,#fff8fa);
+  box-shadow: 0 15px 35px rgba(184,59,104,.12) !important;
+}
+
+.grid .card img {
+  width: 100%;
+  height: 240px !important;
+  object-fit: cover;
+  display:block;
+}
+
+.grid .card h3 {
+  padding: 1.2rem 1.5rem 0 !important;
+  font-size: 1.35rem !important;
+}
+
+.grid .card p {
+  padding: 0.5rem 1.5rem 1.5rem !important;
+  font-size: .95rem !important;
+}
+
+.grid .card::after {
+  content: "View Details  →";
+  display:inline-block;
+  margin: 0 1.5rem 1.5rem;
+  padding: .65rem 1.5rem;
+  background:#b83b68;
+  color:white;
+  border-radius:30px;
+  font-weight:600;
+}
+
+@media(max-width:700px){
+ .grid{
+   grid-template-columns:1fr !important;
+ }
+}
+</style>
+
 </head>
 <body>
   <div class="container">
